@@ -3,7 +3,8 @@
 *
 * 1. 
 * 2. 
-* 3. 
+
+* 3. when the new keyword  is used along with a constructer function it is saying that this now refers to a new object just created.
 * 4. 
 *
 * write out a code example of each explanation above
