@@ -33,6 +33,8 @@ let full_name = {
 }
 full_name.my_name();
 // Principle 3
+//New binding
+// code example for New Binding
 function Car(type) {
     this.make = type.make;
     this.model = type.model;    
@@ -43,8 +45,15 @@ const bmw = new Car({
 })
 console.log(bmw);
 
-// code example for New Binding
+
 
 // Principle 4
-
+//Explicit binding
 // code example for Explicit Binding
+function car(){
+    console.log(this.car);
+}
+const myCar = {
+    car: "bmw"
+}
+car.call(myCar);
