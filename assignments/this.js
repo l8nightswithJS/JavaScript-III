@@ -16,9 +16,9 @@
 
 var name = "eddie";
 function Name() {
-    console.log(this);
+    return(this);
 }
-Name();
+console.log(Name());
 'usestrict'
 
 // Principle 2
@@ -28,10 +28,10 @@ let full_name = {
     first_name: "eddie",
     last_name: "jimenez",
     my_name: function () {
-        console.log(this.first_name + " " + this.last_name);
+        return (this.first_name + " " + this.last_name);
     }    
 }
-full_name.my_name();
+console.log(full_name.my_name());
 // Principle 3
 //New binding
 // code example for New Binding
@@ -51,9 +51,10 @@ console.log(bmw);
 //Explicit binding
 // code example for Explicit Binding
 function car(){
-    console.log(this.car);
+    return this.car;
 }
 const myCar = {
     car: "bmw"
 }
 car.call(myCar);
+console.log(myCar);
